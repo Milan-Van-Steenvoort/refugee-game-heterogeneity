@@ -1,0 +1,50 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block title %}
+Decision task 2.1 - instructions
+{% endblock %}
+
+{% block content %}
+
+
+    <p><u><h4>Both groups of citizens have to decide how much should be given to the refugee.</h4></u></p>
+      <ul>
+      <li> The exact decisions to be made is similar for both groups, and is explained below
+      <li> Participants from group A are making their decisions <strong> before participants from group B make their decision</strong>. 
+      </ul>
+   </div>
+
+   <p><u><h4>Each host citizen has to make the following (private and independant) decision:</h4></u></p>
+   <div> 
+      <ul>
+      <li>The amount that he can give to the refugee varies between 0% and 20% of his common good.
+     </li>
+      <li>To do this, he needs to move a slider to the position you want. Example:
+     </li>
+      <img src="{% static 'rg_instruction_slider.jpg' %}"/>
+      <li>The slider varies between 0% and 20%, with 20% corresponding to one fifth of the common good of his group.
+      </li>
+      <li>A citizen is chosen at random, whose decision determines how many points from the common good of his group are given to the refugee.
+     </li>
+      <li>The remaining points are divided equally between the citizens.
+     </li>
+      <ul>
+      <li>Depending on how much is given to the refugee, this amount varies between 20% and 25% of the common good of his group.
+     </li>
+      </ul>
+      </ul>
+      <br>
+      
+
+
+      <div align = "center">
+         <img src="{% static 'Instruction_2_ref_seq.png' %}" style = "max-width:70%; max-height:70%;"/>
+      </div>
+
+   <button id="button_id" class="btn btn-primary btn-large">
+      Next
+   </button>
+   
+{% endblock %}
