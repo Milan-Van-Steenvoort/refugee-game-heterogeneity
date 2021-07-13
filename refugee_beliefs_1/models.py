@@ -88,7 +88,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
         widget=widgets.RadioSelect)
 
     ref_belief_sim_hh_B = models.IntegerField(
@@ -97,7 +97,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
         widget=widgets.RadioSelect)    
 
     ref_belief_sim_hl_A = models.IntegerField(
@@ -106,7 +106,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
         widget=widgets.RadioSelect)  
 
     ref_belief_sim_hl_B = models.IntegerField(
@@ -115,7 +115,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
         widget=widgets.RadioSelect)    
 
     ref_belief_sim_ll_A = models.IntegerField(
@@ -124,7 +124,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
         widget=widgets.RadioSelect)  
 
     ref_belief_sim_ll_B = models.IntegerField(
@@ -133,7 +133,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
         widget=widgets.RadioSelect)   
 
             # SEQUENTIAL
@@ -146,7 +146,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group A</strong> will share with you?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_hh_B_0 = models.IntegerField(
@@ -155,7 +155,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 0 percent and 5 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 0 percent and 5 percent</strong> of their collective good?',
         widget=widgets.RadioSelect) 
 
     ref_belief_seq_hh_B_5 = models.IntegerField(
@@ -164,7 +164,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 5 percent and 10 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 5 percent and 10 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)   
 
     ref_belief_seq_hh_B_10 = models.IntegerField(
@@ -173,7 +173,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 10 percent and 15 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 10 percent and 15 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_hh_B_15 = models.IntegerField(
@@ -182,7 +182,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 15 percent and 20 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 15 percent and 20 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 
 #hl
@@ -193,7 +193,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group A</strong> will share with you?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_hl_B_0 = models.IntegerField(
@@ -202,7 +202,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 0 percent and 5 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 0 percent and 5 percent</strong> of their collective good?',
         widget=widgets.RadioSelect) 
 
     ref_belief_seq_hl_B_5 = models.IntegerField(
@@ -211,7 +211,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 5 percent and 10 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 5 percent and 10 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)   
 
     ref_belief_seq_hl_B_10 = models.IntegerField(
@@ -220,7 +220,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 10 percent and 15 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 10 percent and 15 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_hl_B_15 = models.IntegerField(
@@ -229,7 +229,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 15 percent and 20 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 15 percent and 20 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 #lh
 
@@ -239,7 +239,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group A</strong> will share with you?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_lh_B_0 = models.IntegerField(
@@ -248,7 +248,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 0 percent and 5 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 0 percent and 5 percent</strong> of their collective good?',
         widget=widgets.RadioSelect) 
 
     ref_belief_seq_lh_B_5 = models.IntegerField(
@@ -257,7 +257,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 5 percent and 10 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 5 percent and 10 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)   
 
     ref_belief_seq_lh_B_10 = models.IntegerField(
@@ -266,7 +266,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 10 percent and 15 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 10 percent and 15 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_lh_B_15 = models.IntegerField(
@@ -275,7 +275,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 15 percent and 20 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 15 percent and 20 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 #ll
 
@@ -285,7 +285,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group A will share with you?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group A</strong> will share with you?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_ll_B_0 = models.IntegerField(
@@ -294,7 +294,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 0 percent and 5 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 0 percent and 5 percent</strong> of their collective good?',
         widget=widgets.RadioSelect) 
 
     ref_belief_seq_ll_B_5 = models.IntegerField(
@@ -303,7 +303,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 5 percent and 10 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 5 percent and 10 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)   
 
     ref_belief_seq_ll_B_10 = models.IntegerField(
@@ -312,7 +312,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 10 percent and 15 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 10 percent and 15 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 
     ref_belief_seq_ll_B_15 = models.IntegerField(
@@ -321,7 +321,7 @@ class Player(BasePlayer):
         [2, 'Between 5 percent and 10 percent'],
         [3, 'Between 10 percent and 15 percent'],
         [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common good do you believe that citizens from group B will share with you if citizens from group A have shared between 15 percent and 20 percent of their collective good?',
+      ], label='What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A have shared between 15 percent and 20 percent</strong> of their collective good?',
         widget=widgets.RadioSelect)  
 
 # (2) Variables related to test questions
@@ -372,7 +372,7 @@ class Player(BasePlayer):
         [1, 'Between 0 percent and 20 percent'],
         [2, 'Between 0 percent and 30 percent'],
         [3, 'Between 0 percent and 40 percent'],
-      ], label='What percentage of their common good can citizens from group A share with the refugee?',
+      ], label='What percentage of their common account can citizens from group A share with the refugee?',
         widget=widgets.RadioSelect)
 
 # helping other
@@ -381,7 +381,7 @@ class Player(BasePlayer):
         [1, 'Between 0 percent and 20 percent'],
         [2, 'Between 0 percent and 30 percent'],
         [3, 'Between 0 percent and 40 percent'],
-      ], label='What percentage of their common good can citizens from group B share with the refugee?',
+      ], label='What percentage of their common account can citizens from group B share with the refugee?',
         widget=widgets.RadioSelect)
 
 # timing of the decision sim
@@ -389,7 +389,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'Before citizens from group B make their decisions'],
         [2, 'After citizens from group B make their decisions'],
-        [3, 'At the same time than citizens from group B make their decisions'],
+        [3, 'At the same time that citizens from group B make their decisions'],
       ], label='Participants in group A make their decisions',
         widget=widgets.RadioSelect)
 
@@ -398,7 +398,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'Before citizens from group B make their decisions'],
         [2, 'After citizens from group B make their decisions'],
-        [3, 'At the same time than citizens from group B make their decisions'],
+        [3, 'At the same time that citizens from group B make their decisions'],
       ], label='Participants in group A make their decisions',
         widget=widgets.RadioSelect)
 
