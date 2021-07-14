@@ -209,7 +209,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'A participants in another study'],
         [2, 'A participant in this study'],
-        [3, 'A real refugee'],
+        [3, 'No player takes on the role of refugee'],
       ], label='The player who takes on the role of the refugee is',
         widget=widgets.RadioSelect)
 
@@ -220,16 +220,16 @@ class Player(BasePlayer):
         [1, '4 citizens x 15 points (20 percent of 75 points) = 60 points'],
         [2, '4 citizens x 30 points (40 percent of 75 points) = 120 points'],
         [3, '4 citizens x 45 points (60 percent of 75 points) = 180 points'],
-      ], label='Each citizen from your group receives 75 points in the typing task. How many points are added to the common good of your group?',
+      ], label='Each citizen from your group receives 75 points in the typing task. How many points are added to the common account of your group?',
         widget=widgets.RadioSelect) 
 
 # contribution _low
     t7_contribution_example_l = models.IntegerField(
       choices=[
-        [1, '4 citizens x 5 points (20 percent of 75 points) = 20 points'],
-        [2, '4 citizens x 10 points (40 percent of 75 points) = 40 points'],
-        [3, '4 citizens x 15 points (60 percent of 75 points) = 60 points'],
-      ], label='Each citizen from your group receives 25 points in the typing task. How many points are added to the common good of your group?',
+        [1, '4 citizens x 5 points (20 percent of 25 points) = 20 points'],
+        [2, '4 citizens x 10 points (40 percent of 25 points) = 40 points'],
+        [3, '4 citizens x 15 points (60 percent of 25 points) = 60 points'],
+      ], label='Each citizen from your group receives 25 points in the typing task. How many points are added to the common account of your group?',
         widget=widgets.RadioSelect)     
 
 # contribution other _high
@@ -238,16 +238,16 @@ class Player(BasePlayer):
         [1, '4 citizens x 15 points (20 percent of 75 points) = 60 points'],
         [2, '4 citizens x 30 points (40 percent of 75 points) = 120 points'],
         [3, '4 citizens x 45 points (60 percent of 75 points) = 180 points'],
-      ], label='Each citizen from the other group receives 75 points in the typing task. How many points are added to the common good of the other group?',
+      ], label='Each citizen from the other group receives 75 points in the typing task. How many points are added to the common account of the other group?',
         widget=widgets.RadioSelect) 
 
 # contribution other _low
     t8_contribution_other_example_l = models.IntegerField(
       choices=[
-        [1, '4 citizens x 5 points (20 percent of 75 points) = 20 points'],
-        [2, '4 citizens x 10 points (40 percent of 75 points) = 40 points'],
-        [3, '4 citizens x 15 points (60 percent of 75 points) = 60 points'],
-      ], label='Each citizen from the other group receives 25 points in the typing task. How many points are added to the common good of the other group?',
+        [1, '4 citizens x 5 points (20 percent of 25 points) = 20 points'],
+        [2, '4 citizens x 10 points (40 percent of 25 points) = 40 points'],
+        [3, '4 citizens x 15 points (60 percent of 25 points) = 60 points'],
+      ], label='Each citizen from the other group receives 25 points in the typing task. How many points are added to the common account of the other group?',
         widget=widgets.RadioSelect)         
 
 # helping
@@ -256,7 +256,7 @@ class Player(BasePlayer):
         [1, 'Between 0 percent and 20 percent'],
         [2, 'Between 0 percent and 30 percent'],
         [3, 'Between 0 percent and 40 percent'],
-      ], label='What percentage of your common good can citizens from your group share with the refugee?',
+      ], label='What percentage of your common account can citizens from your group share with the refugee?',
         widget=widgets.RadioSelect)
 
 # helping other
@@ -265,7 +265,7 @@ class Player(BasePlayer):
         [1, 'Between 0 percent and 20 percent'],
         [2, 'Between 0 percent and 30 percent'],
         [3, 'Between 0 percent and 40 percent'],
-      ], label='What percentage of their common good can citizens from the other group share with the refugee?',
+      ], label='What percentage of their common account can citizens from the other group share with the refugee?',
         widget=widgets.RadioSelect)
 
 # timing of the decision fm 
@@ -273,7 +273,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'Before the other group makes their decision'],
         [2, 'After the other group makes their decision'],
-        [3, 'At the same time than the other group makes their decision'],
+        [3, 'At the same time that the other group makes their decision'],
       ], label='There are two groups in the experiment. When are you and the other participants in your group making the decision?',
         widget=widgets.RadioSelect)
 
@@ -282,7 +282,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'Before the other group makes their decision'],
         [2, 'After the other group makes their decision'],
-        [3, 'At the same time than the other group makes their decision'],
+        [3, 'At the same time that the other group makes their decision'],
       ], label='There are two groups in the experiment. At what time are you and the other participants in your group making the decision?',
         widget=widgets.RadioSelect)
 
@@ -291,7 +291,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'Before the other group makes their decision'],
         [2, 'After the other group makes their decision'],
-        [3, 'At the same time than the other group makes their decision'],
+        [3, 'At the same time that the other group makes their decision'],
       ], label='There are two groups in the experiment. At what time are you and the other participants in your group making the decision?',
         widget=widgets.RadioSelect)
 
