@@ -209,7 +209,7 @@ class Player(BasePlayer):
       choices=[
         [1, 'A participants in another study'],
         [2, 'A participant in this study'],
-        [3, 'No player takes on the role of refugee'],
+        [3, 'The role of the refugee is not taken by any real person'],
       ], label='The player who takes on the role of the refugee is',
         widget=widgets.RadioSelect)
 
