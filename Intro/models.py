@@ -49,7 +49,7 @@ class Player(BasePlayer):
 
     consent_rules = models.BooleanField(
         widget=widgets.CheckboxInput(),
-        label= "I hereby confirm that I have read and understood the declaration of consent for the experiment and I voluntarily declare that I am willing to participate in this study and that I consent to the processing of my data",
+        label= "I hereby confirm that I have read and understood the declaration of consent for the experiment and I voluntarily declare that I am willing to participate in this study and that I consent to the processing of my data. Moreover, I understand that there will be exclusion checks, and that I therefore might be excluded in case I do not fulfill the attention checks",
     )
 
 
