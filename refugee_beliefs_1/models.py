@@ -80,229 +80,39 @@ class Player(BasePlayer):
  # (1) Variables related to beliefs
 #---------------------------------------------------------------  
 
-            # SIMULTANEOUS
+    ref_belief_sim_hh_A = models.IntegerField()
+    ref_belief_sim_hh_B = models.IntegerField()
+    ref_belief_sim_hl_A = models.IntegerField()
+    ref_belief_sim_hl_B = models.IntegerField()
+    ref_belief_sim_ll_A = models.IntegerField()
+    ref_belief_sim_ll_B = models.IntegerField()
 
-    ref_belief_sim_hh_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
-        widget=widgets.RadioSelect)
+    ref_belief_seq_hh_A = models.IntegerField()
+    ref_belief_seq_hh_B_1 = models.IntegerField()
+    ref_belief_seq_hh_B_2 = models.IntegerField()
+    ref_belief_seq_hh_B_3 = models.IntegerField()
+    ref_belief_seq_hh_B_4 = models.IntegerField()
 
-    ref_belief_sim_hh_B = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
-        widget=widgets.RadioSelect)    
+    ref_belief_seq_hl_A = models.IntegerField()
+    ref_belief_seq_hl_B_1 = models.IntegerField()
+    ref_belief_seq_hl_B_2 = models.IntegerField()
+    ref_belief_seq_hl_B_3 = models.IntegerField()
+    ref_belief_seq_hl_B_4 = models.IntegerField()
 
-    ref_belief_sim_hl_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
-        widget=widgets.RadioSelect)  
+    ref_belief_seq_lh_A = models.IntegerField()
+    ref_belief_seq_lh_B_1 = models.IntegerField()
+    ref_belief_seq_lh_B_2 = models.IntegerField()
+    ref_belief_seq_lh_B_3 = models.IntegerField()
+    ref_belief_seq_lh_B_4 = models.IntegerField()
 
-    ref_belief_sim_hl_B = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
-        widget=widgets.RadioSelect)    
+    ref_belief_seq_ll_A = models.IntegerField()
+    ref_belief_seq_ll_B_1 = models.IntegerField()
+    ref_belief_seq_ll_B_2 = models.IntegerField()
+    ref_belief_seq_ll_B_3 = models.IntegerField()
+    ref_belief_seq_ll_B_4 = models.IntegerField()
 
-    ref_belief_sim_ll_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
-        widget=widgets.RadioSelect)  
 
-    ref_belief_sim_ll_B = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
-        widget=widgets.RadioSelect)   
 
-            # SEQUENTIAL
-
-#hh
-
-    ref_belief_seq_hh_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_hh_B_0 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect) 
-
-    ref_belief_seq_hh_B_5 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)   
-
-    ref_belief_seq_hh_B_10 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_hh_B_15 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-#hl
-
-    ref_belief_seq_hl_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_hl_B_0 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect) 
-
-    ref_belief_seq_hl_B_5 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)   
-
-    ref_belief_seq_hl_B_10 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_hl_B_15 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-#lh
-
-    ref_belief_seq_lh_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_lh_B_0 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect) 
-
-    ref_belief_seq_lh_B_5 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)   
-
-    ref_belief_seq_lh_B_10 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_lh_B_15 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-#ll
-
-    ref_belief_seq_ll_A = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_ll_B_0 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect) 
-
-    ref_belief_seq_ll_B_5 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)   
-
-    ref_belief_seq_ll_B_10 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
-
-    ref_belief_seq_ll_B_15 = models.IntegerField(
-      choices=[
-        [1, 'Between 0 percent and 5 percent'],
-        [2, 'Between 5 percent and 10 percent'],
-        [3, 'Between 10 percent and 15 percent'],
-        [4, 'Between 15 percent and 20 percent'],
-      ], widget=widgets.RadioSelect)  
 
 # (2) Variables related to test questions
 #---------------------------------------------------------------  
@@ -442,3 +252,238 @@ class Player(BasePlayer):
   # I created two apps, each containing the simultaneous and sequential block 
   # Per app, each treatment only plays one block (e.g. simseq plays sim in first app, seq in second app)
   # Within each app, I randomised the order of the pages: see lines 23-26 and 45-52 in models.py
+
+
+# CATEGORICAL DECISIONS FOR REFUGEE BELIEFS - questions must be defined in the formfied if we want use bold characters (formfield name "label=")
+
+            # SIMULTANEOUS
+
+#    ref_belief_sim_hh_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
+#        widget=widgets.RadioSelect)
+#
+#    ref_belief_sim_hh_B = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
+#        widget=widgets.RadioSelect)    
+#
+#    ref_belief_sim_hl_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
+#        widget=widgets.RadioSelect)  
+#
+#    ref_belief_sim_hl_B = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
+#        widget=widgets.RadioSelect)    
+#
+#    ref_belief_sim_ll_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], label='What percentage of their common account do you believe that citizens from group A will share with you?',
+#        widget=widgets.RadioSelect)  
+#
+#    ref_belief_sim_ll_B = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], label='What percentage of their common account do you believe that citizens from group B will share with you?',
+#        widget=widgets.RadioSelect)   
+#
+#            # SEQUENTIAL
+#
+##hh
+#
+#    ref_belief_seq_hh_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_hh_B_0 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect) 
+#
+#    ref_belief_seq_hh_B_5 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)   
+#
+#    ref_belief_seq_hh_B_10 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_hh_B_15 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+##hl
+#
+#    ref_belief_seq_hl_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_hl_B_0 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect) 
+#
+#    ref_belief_seq_hl_B_5 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)   
+#
+#    ref_belief_seq_hl_B_10 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_hl_B_15 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+##lh
+#
+#    ref_belief_seq_lh_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_lh_B_0 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect) 
+#
+#    ref_belief_seq_lh_B_5 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)   
+#
+#    ref_belief_seq_lh_B_10 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_lh_B_15 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+##ll
+#
+#    ref_belief_seq_ll_A = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_ll_B_0 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect) 
+#
+#    ref_belief_seq_ll_B_5 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)   
+#
+#    ref_belief_seq_ll_B_10 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+#
+#    ref_belief_seq_ll_B_15 = models.IntegerField(
+#      choices=[
+#        [1, 'Between 0 percent and 5 percent'],
+#        [2, 'Between 5 percent and 10 percent'],
+#        [3, 'Between 10 percent and 15 percent'],
+#        [4, 'Between 15 percent and 20 percent'],
+#      ], widget=widgets.RadioSelect)  
+
+# FORMFIELDS IN HTML - for hh
+
+  #  {% formfield player.ref_belief_seq_hh_A label="What percentage of their common account do you believe that citizens from <strong>group A</strong> will share with you?" %}
+  #  {% formfield player.ref_belief_seq_hh_B_0 label="What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A gave 0% to 5%</strong> of their common account?" %}
+  #  {% formfield player.ref_belief_seq_hh_B_5 label="What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A gave 6% to 10%</strong> of their common account?" %}
+  #  {% formfield player.ref_belief_seq_hh_B_10 label="What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A gave 11% to 15%</strong> of their common account?" %}
+ #   {% formfield player.ref_belief_seq_hh_B_15 label="What percentage of their common account do you believe that citizens from <strong>group B</strong> will share with you <strong>if citizens from group A gave 16% to 20%</strong> of their common account?" %}
