@@ -27,7 +27,7 @@ class Subsession(BaseSubsession):
         #treatment assignement. This variables is imported in every app.
         import itertools
         if self.round_number == 1:
-            treatment = itertools.cycle(['hh_sim','hh_fm','hh_sm','ll_sim','ll_fm','ll_sm','hl_sim','hl_fm','hl_sm','lh_sim','lh_fm','lh_sm', 'refugee_simseq', 'refugee_seqsim'])
+            treatment = itertools.cycle(['hh_sim','hh_fm','hh_sm','ll_sim','ll_fm','ll_sm','hl_sim','hl_fm','hl_sm','lh_sim','lh_fm','lh_sm'])
             for p in self.get_players():
                 p.treatment = next(treatment)
             
