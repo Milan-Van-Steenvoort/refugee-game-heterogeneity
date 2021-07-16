@@ -88,7 +88,7 @@ class ref_seq_hh(Page):
         return (self.player.treatment == 'refugee_seqsim') & (self.round_number == self.player.participant.vars['task_rounds_seq']['ref_seq_hh'])
 
     form_model = 'player'
-    form_fields = ['ref_belief_seq_hh_A', 'ref_belief_seq_hh_B_0', 'ref_belief_seq_hh_B_5', 'ref_belief_seq_hh_B_10', 'ref_belief_seq_hh_B_15']
+    form_fields = ['ref_belief_seq_hh_A', 'ref_belief_seq_hh_B_1', 'ref_belief_seq_hh_B_2', 'ref_belief_seq_hh_B_3', 'ref_belief_seq_hh_B_4']
 
 class ref_seq_hl(Page):
 
@@ -96,7 +96,7 @@ class ref_seq_hl(Page):
         return (self.player.treatment == 'refugee_seqsim') & (self.round_number == self.player.participant.vars['task_rounds_seq']['ref_seq_hl'])
 
     form_model = 'player'
-    form_fields = ['ref_belief_seq_hl_A', 'ref_belief_seq_hl_B_0', 'ref_belief_seq_hl_B_5', 'ref_belief_seq_hl_B_10', 'ref_belief_seq_hl_B_15']
+    form_fields = ['ref_belief_seq_hl_A', 'ref_belief_seq_hl_B_1', 'ref_belief_seq_hl_B_2', 'ref_belief_seq_hl_B_3', 'ref_belief_seq_hl_B_4']
 
 class ref_seq_lh(Page):
 
@@ -104,7 +104,7 @@ class ref_seq_lh(Page):
         return (self.player.treatment == 'refugee_seqsim') & (self.round_number == self.player.participant.vars['task_rounds_seq']['ref_seq_lh'])
 
     form_model = 'player'
-    form_fields = ['ref_belief_seq_lh_A', 'ref_belief_seq_lh_B_0', 'ref_belief_seq_lh_B_5', 'ref_belief_seq_lh_B_10', 'ref_belief_seq_lh_B_15']
+    form_fields = ['ref_belief_seq_lh_A', 'ref_belief_seq_lh_B_1', 'ref_belief_seq_lh_B_2', 'ref_belief_seq_lh_B_3', 'ref_belief_seq_lh_B_4']
 
 class ref_seq_ll(Page):
 
@@ -112,7 +112,7 @@ class ref_seq_ll(Page):
         return (self.player.treatment == 'refugee_seqsim') & (self.round_number == self.player.participant.vars['task_rounds_seq']['ref_seq_ll'])
         
     form_model = 'player'
-    form_fields = ['ref_belief_seq_ll_A', 'ref_belief_seq_ll_B_0', 'ref_belief_seq_ll_B_5', 'ref_belief_seq_ll_B_10', 'ref_belief_seq_ll_B_15']
+    form_fields = ['ref_belief_seq_ll_A', 'ref_belief_seq_ll_B_1', 'ref_belief_seq_ll_B_2', 'ref_belief_seq_ll_B_3', 'ref_belief_seq_ll_B_4']
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
