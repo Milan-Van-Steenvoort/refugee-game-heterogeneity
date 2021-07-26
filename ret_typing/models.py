@@ -141,7 +141,7 @@ class Player(BasePlayer):
         [1, '1'],
         [2, '2'],
         [3, '3'],
-      ], label='How many groups of citizens are there in total?',
+      ], label='How many groups of citizens are there in decision task 2?',
         widget=widgets.RadioSelect)
 
 #number of  citizens _all treatments     
@@ -159,7 +159,7 @@ class Player(BasePlayer):
         [1, '1'],
         [2, '2'],
         [3, '3'],
-      ], label='How many refugees are there?',
+      ], label='How many refugees are there in decision task 2?',
         widget=widgets.RadioSelect)
 
 #earnings _high
@@ -207,7 +207,7 @@ class Player(BasePlayer):
         
     t6_refugee_participant = models.IntegerField(
       choices=[
-        [1, 'A participants in another study'],
+        [1, 'A participant in another study'],
         [2, 'A participant in this study'],
         [3, 'The role of the refugee is not taken by any real person'],
       ], label='The player who takes on the role of the refugee is',
@@ -320,7 +320,7 @@ class Player(BasePlayer):
 
     def t6_refugee_participant_error_message(self, value):
       print('value is', value)
-      if value != 2:
+      if value != 1:
          self.incorrect_attempts6+= 1
          return 'Wrong answer. Please try again.'
          
