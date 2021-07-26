@@ -3,6 +3,7 @@
 var continuous_final_number = 100;
 
 /* Create each slider and attach the necessary event handlers */
+var confirm_button = document.getElementById("button_id");
 
 var item1_slider = $('#item1').slider({
     formatter: function(value) {
@@ -68,6 +69,8 @@ var item6_slider = $('#item6').slider({
     var value = item6_slider.getValue();
     var proportional_position_on_slider = value / continuous_final_number;
     update_displayed_values('item6', proportional_position_on_slider);
+    confirm_button.disabled = false;
+    confirm_button.innerHTML = "Next";
 }).data('slider');
 
 
@@ -79,3 +82,12 @@ update_displayed_values('item3', item3_slider.getValue() / continuous_final_numb
 update_displayed_values('item4', item4_slider.getValue() / continuous_final_number);
 update_displayed_values('item5', item5_slider.getValue() / continuous_final_number);
 update_displayed_values('item6', item6_slider.getValue() / continuous_final_number);
+
+/* 
+If we want to use confirm buttons, this was on line 34 and 53/54 of the html SliderPromaryContinuous (includes the confirm buttons and overal confirm button in html -= I left the fuction in static/javascript unchanged)
+I have also added line 6, 72/73 to this code (function that activates next button when last slider is clicked), as well as 53/55 in the html (new confirm button)
+
+                            <div class="col-sm-2"><button type="button" disabled class="btn btn-primary btn-large" id="item{{ item_number }}_confirm" value="False">Confirm</button></div>
+    <button type="button" class="btn btn-primary btn-large" id="continue_button" >Continue</button>
+    <button id="hidden_submit_button" type="submit" hidden="True"></button>
+    */
