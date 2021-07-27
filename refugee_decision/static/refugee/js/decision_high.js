@@ -23,21 +23,18 @@ rangeslider.onclick = function() {
 
 /*At first sight, this just defines initial values for the output variables. */
 output.innerHTML = " "; 
-output2.innerHTML = (25).toFixed(2);
-output3.innerHTML = (25).toFixed(2);
+output2.innerHTML = (0).toFixed(2);
+output3.innerHTML = (0).toFixed(2);
 output4.innerHTML = (0).toFixed(2);        
 
 /*At first sight, this  defines the function generating the values for the output variables. */
 rangeslider.oninput = function() {
 	rangeslider.className = "clicked";	
 	output.innerHTML = this.value;
-	output2.innerHTML = ((100 - this.value)/4).toFixed(2);
+	output2.innerHTML = ((((100 - this.value)/4)/100)*(120)).toFixed(2);
 	output3.innerHTML = output2.innerHTML;
-	output4.innerHTML = (this.value*1).toFixed(2);
+	output4.innerHTML = (((this.value*1)/100)*(120)).toFixed(2);
 }
-
-
-
 
 
 

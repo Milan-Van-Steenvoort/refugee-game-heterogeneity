@@ -18,7 +18,7 @@
             <p>Your private earnings: {{ player.private_earning}}</p>
             <p align = "center" style="font-size:24px";><strong>Common account of your group</strong></p>
             <p>Total contribution to the common account of your group: {{ 120}}</p>           
-            <p>Your personal percentage of points: <span id="personal_share"></span></p>
+            <p>Your personal share of points: <span id="personal_share"></span></p>
             <p>Share of points of other citizens: <span id="citizen_share"></span></p>
             <p>Share of points for the refugee: <span id="refugee_share"></span></p>
             </div>
@@ -29,7 +29,7 @@
             <li>The refugee does not take part in the typing task and therefore cannot contribute to the common account of your group.</li>
             <li>You and the other citizens in your group earn 75 points in the typing task.</li>
             <li>Citizens in the other group earn 75 points in the typing task.</li>
-            <li>Citizens in the other group will make their decisions after you have made your decision. This means that participants in the other group can determine the amount of their common account to be given to the refugee knowing how much your group gave to the refugee.</li>
+            <li>You can think of citizens in the other group as making their decisions after you have made your decision. This means that participants in the other group can determine the amount of their common account to be given to the refugee conditionally on how much your group gave to the refugee.</li>
             </strong>
          </ul>
          </br>         
@@ -60,6 +60,6 @@
 
 {% block scripts %}
 
-	<script src="{% static "refugee/js/decision.js" %}"></script>
+	<script src="{% static "refugee/js/decision_high.js" %}"></script>
 
 {% endblock %}

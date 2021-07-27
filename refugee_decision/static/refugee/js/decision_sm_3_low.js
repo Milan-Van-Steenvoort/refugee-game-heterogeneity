@@ -23,15 +23,16 @@ rangeslider_3.onclick = function() {
 
 /*At first sight, this just defines initial values for the output variables. */
 output_sm_3.innerHTML = " "; 
-output2_sm_3.innerHTML = (25).toFixed(2);
-output3_sm_3.innerHTML = (25).toFixed(2);
+output2_sm_3.innerHTML = (0).toFixed(2);
+output3_sm_3.innerHTML = (0).toFixed(2);
 output4_sm_3.innerHTML = (0).toFixed(2);        
+        
 
 /*At first sight, this  defines the function generating the values for the output variables. */
 rangeslider_3.oninput = function() {
 	rangeslider_3.className = "clicked";	
 	output_sm_3.innerHTML = this.value;
-	output2_sm_3.innerHTML = ((100 - this.value)/4).toFixed(2);
+	output2_sm_3.innerHTML = ((((100 - this.value)/4)/100)*(40)).toFixed(2);
 	output3_sm_3.innerHTML = output2_sm_3.innerHTML;
-	output4_sm_3.innerHTML = (this.value*1).toFixed(2);
+	output4_sm_3.innerHTML = (((this.value*1)/100)*(40)).toFixed(2);
 }
