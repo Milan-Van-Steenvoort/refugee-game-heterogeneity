@@ -18,7 +18,7 @@
             <p>Your private earnings: {{ player.private_earning}}</p>
             <p align = "center" style="font-size:24px";><strong>Common account</strong></p>
             <p>Total contribution to the common account: {{40}}</p>           
-            <p>Your personal percentage of points: <span id="personal_share_sm_4"></span></p>
+            <p>Your personal share of points: <span id="personal_share_sm_4"></span></p>
             <p>Share of points of other citizens: <span id="citizen_share_sm_4"></span></p>
             <p>Share of points for the refugee: <span id="refugee_share_sm_4"></span></p>
             </div>
@@ -60,6 +60,6 @@
 
 {% block scripts %}
 
-   <script src="{% static "refugee/js/decision_sm_4.js" %}"></script>
+   <script src="{% static "refugee/js/decision_sm_4_low.js" %}"></script>
 
 {% endblock %}
