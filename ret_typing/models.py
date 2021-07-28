@@ -274,7 +274,7 @@ class Player(BasePlayer):
         [1, 'Before the other group makes their decision'],
         [2, 'After the other group makes their decision'],
         [3, 'At the same time that the other group makes their decision'],
-      ], label='There are two groups in the experiment. When are you and the other participants in your group making the decision?',
+      ], label='There are two groups in the experiment. At what strategic time are you and the other participants in your group making the decision?',
         widget=widgets.RadioSelect)
 
 # timing of the decision sm 
@@ -283,7 +283,7 @@ class Player(BasePlayer):
         [1, 'Before the other group makes their decision'],
         [2, 'After the other group makes their decision'],
         [3, 'At the same time that the other group makes their decision'],
-      ], label='There are two groups in the experiment. At what time are you and the other participants in your group making the decision?',
+      ], label='There are two groups in the experiment. At what strategic time are you and the other participants in your group making the decision?',
         widget=widgets.RadioSelect)
 
 # timing of the decision sim 
@@ -292,7 +292,7 @@ class Player(BasePlayer):
         [1, 'Before the other group makes their decision'],
         [2, 'After the other group makes their decision'],
         [3, 'At the same time that the other group makes their decision'],
-      ], label='There are two groups in the experiment. At what time are you and the other participants in your group making the decision?',
+      ], label='There are two groups in the experiment. At what strategic time are you and the other participants in your group making the decision?',
         widget=widgets.RadioSelect)
 
                     # ANSWERS

@@ -29,8 +29,8 @@ output4_sm_4.innerHTML = (0).toFixed(2);
     
 
 /*At first sight, this  defines the function generating the values for the output variables. */
-rangeslider_3.oninput = function() {
-	rangeslider_3.className = "clicked";	
+rangeslider_4.oninput = function() {
+	rangeslider_4.className = "clicked";	
 	output_sm_4.innerHTML = this.value;
 	output2_sm_4.innerHTML = ((((100 - this.value)/4)/100)*(120)).toFixed(2);
 	output3_sm_4.innerHTML = output2_sm_4.innerHTML;
