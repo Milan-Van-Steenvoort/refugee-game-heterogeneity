@@ -265,6 +265,7 @@ class Test_questions_hh_fm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_h', 't5_points_other_h', 't6_refugee_participant', 't7_contribution_example_h', 't8_contribution_other_example_h', 't9_helping', 't10_helping_other', 't11_timing_fm']
 
+
 class Test_questions_hh_sim(Page):
 
     def is_displayed(self):
@@ -273,6 +274,7 @@ class Test_questions_hh_sim(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_h', 't5_points_other_h', 't6_refugee_participant', 't7_contribution_example_h', 't8_contribution_other_example_h', 't9_helping', 't10_helping_other', 't11_timing_sim']
 
+        
 class Test_questions_hh_sm(Page):
 
     def is_displayed(self):
@@ -281,6 +283,7 @@ class Test_questions_hh_sm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_h', 't5_points_other_h', 't6_refugee_participant', 't7_contribution_example_h', 't8_contribution_other_example_h', 't9_helping', 't10_helping_other', 't11_timing_sm']
 
+        
 
 
 
@@ -295,6 +298,7 @@ class Test_questions_hl_fm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_h', 't5_points_other_l', 't6_refugee_participant', 't7_contribution_example_h', 't8_contribution_other_example_l', 't9_helping', 't10_helping_other', 't11_timing_fm']
 
+        
 class Test_questions_hl_sim(Page):
 
     def is_displayed(self):
@@ -303,6 +307,7 @@ class Test_questions_hl_sim(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_h', 't5_points_other_l', 't6_refugee_participant', 't7_contribution_example_h', 't8_contribution_other_example_l', 't9_helping', 't10_helping_other', 't11_timing_sim']
 
+        
 class Test_questions_hl_sm(Page):
 
     def is_displayed(self):
@@ -310,7 +315,6 @@ class Test_questions_hl_sm(Page):
 
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_l', 't5_points_other_h', 't6_refugee_participant', 't7_contribution_example_l', 't8_contribution_other_example_h', 't9_helping', 't10_helping_other', 't11_timing_sm']
-
 
 
 
@@ -323,6 +327,7 @@ class Test_questions_ll_fm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_l', 't5_points_other_l', 't6_refugee_participant', 't7_contribution_example_l', 't8_contribution_other_example_l', 't9_helping', 't10_helping_other', 't11_timing_fm']
 
+        
 class Test_questions_ll_sim(Page):
 
     def is_displayed(self):
@@ -330,7 +335,7 @@ class Test_questions_ll_sim(Page):
 
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_l', 't5_points_other_l', 't6_refugee_participant', 't7_contribution_example_l', 't8_contribution_other_example_l', 't9_helping', 't10_helping_other', 't11_timing_sim']
-
+        
 class Test_questions_ll_sm(Page):
 
     def is_displayed(self):
@@ -339,6 +344,7 @@ class Test_questions_ll_sm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_l', 't5_points_other_l', 't6_refugee_participant', 't7_contribution_example_l', 't8_contribution_other_example_l', 't9_helping', 't10_helping_other', 't11_timing_sm']
 
+        
 
 
 
@@ -351,6 +357,7 @@ class Test_questions_lh_fm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_l', 't5_points_other_h', 't6_refugee_participant', 't7_contribution_example_l', 't8_contribution_other_example_h', 't9_helping', 't10_helping_other', 't11_timing_fm']
 
+        
 class Test_questions_lh_sim(Page):
 
     def is_displayed(self):
@@ -358,7 +365,7 @@ class Test_questions_lh_sim(Page):
 
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_l', 't5_points_other_h', 't6_refugee_participant', 't7_contribution_example_l', 't8_contribution_other_example_h', 't9_helping', 't10_helping_other', 't11_timing_sim']
-
+        
 class Test_questions_lh_sm(Page):
 
     def is_displayed(self):
@@ -367,8 +374,16 @@ class Test_questions_lh_sm(Page):
     form_model = 'player'
     form_fields = ['t1_number_of_citizens_groups', 't2_number_of_citizens', 't3_number_of_refugees', 't4_points_h', 't5_points_other_l', 't6_refugee_participant', 't7_contribution_example_h', 't8_contribution_other_example_l', 't9_helping', 't10_helping_other', 't11_timing_sm']
 
+        
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+# Exclusion if too many mistakes in test questions
 
+class SorryTooManyMistakes(Page):
 
+    def is_displayed(self):
+        return (self.round_number == 1) & (self.player.total_incorrect_answers > 10) 
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
@@ -570,6 +585,7 @@ page_sequence = [
         Test_questions_lh_fm,
         Test_questions_lh_sim,
         Test_questions_lh_sm,
+        SorryTooManyMistakes,
         start_hh_fm,
         start_hh_sim,
         start_hh_sm,

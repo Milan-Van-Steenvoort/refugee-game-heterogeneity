@@ -101,7 +101,9 @@ class Player(BasePlayer):
     incorrect_attempts8 = models.IntegerField(initial=0)   
     incorrect_attempts9 = models.IntegerField(initial=0)  
     incorrect_attempts10 = models.IntegerField(initial=0) 
-    incorrect_attempts11 = models.IntegerField(initial=0)       
+    incorrect_attempts11 = models.IntegerField(initial=0)      
+
+    total_incorrect_answers = models.IntegerField(initial=0)     
     
  
     # def get_treatment(self):
@@ -304,36 +306,42 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 2:
          self.incorrect_attempts1 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
     def t2_number_of_citizens_error_message(self, value):
       print('value is', value)
       if value != 4:
          self.incorrect_attempts2 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
     def t3_number_of_refugees_error_message(self, value):
       print('value is', value)
       if value != 1:
          self.incorrect_attempts3 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
     def t6_refugee_participant_error_message(self, value):
       print('value is', value)
       if value != 1:
          self.incorrect_attempts6+= 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
     def t9_helping_error_message(self, value):
       print('value is', value)
       if value != 1:
          self.incorrect_attempts9+= 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
     def t10_helping_other_error_message(self, value):
       print('value is', value)
       if value != 1:
          self.incorrect_attempts10+= 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
 
@@ -343,6 +351,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 75:
          self.incorrect_attempts4 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
 
@@ -350,6 +359,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 25:
          self.incorrect_attempts4 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
          
@@ -359,6 +369,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 75:
          self.incorrect_attempts5 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
          
@@ -366,6 +377,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 25:
          self.incorrect_attempts5 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
 # Question 7 differs between high and low  treatment groups
@@ -374,6 +386,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 2:
          self.incorrect_attempts7 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
          
@@ -381,6 +394,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 2:
          self.incorrect_attempts7 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
 # Question 8 differs between high and low 'other' treatment groups
@@ -389,6 +403,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 2:
          self.incorrect_attempts8 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
          
@@ -396,6 +411,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 2:
          self.incorrect_attempts8 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
 # Question 11 differs between fm, sm and sim treatment groups
@@ -404,6 +420,7 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 1:
          self.incorrect_attempts11 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
          
          
@@ -411,12 +428,14 @@ class Player(BasePlayer):
       print('value is', value)
       if value != 2:
          self.incorrect_attempts11 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
     def t11_timing_sim_error_message(self, value):
       print('value is', value)
       if value != 3:
          self.incorrect_attempts11 += 1
+         self.total_incorrect_answers +=1
          return 'Wrong answer. Please try again.'
 
 
