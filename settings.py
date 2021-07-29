@@ -6,7 +6,7 @@ SESSION_CONFIGS = [
         name='refugee_decision',
         display_name="Refugee Game",
         num_demo_participants=14,
-        #app_sequence= ['svotree','refugee_beliefs_1', 'refugee_beliefs_2' ],
+        #app_sequence= ['svotree','ret_typing', 'refugee_decision' ],
         app_sequence= ['Intro', 'svotree', 'svotree_secondary', 'ret_typing_practice', 'ret_typing', 'refugee_decision', 'demographics']
     )
 
