@@ -61,6 +61,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     treatment = models.StringField()
+    starting_time = models.LongStringField(doc="Time at which decision task 1 starts")
 
     def set_payoff(self):
         """Calculate payoff, to be implemented later """
@@ -74,6 +75,8 @@ class Player(BasePlayer):
     slider6 = models.FloatField()
     slider_angle = models.FloatField()
     slider_classification = models.CharField()
+
+
 
 
 #-------------------------------------------------------------------------------------------------
