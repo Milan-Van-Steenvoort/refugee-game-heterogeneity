@@ -45,7 +45,7 @@ class SliderSecondaryContinuous(Page):
             'item15': self.player.slider15,
         }
 
-        #distance on the slider betwen the chosen value and the equal split point
+        #distance on the slider between the chosen value and the equal split point
         self.player.dist_equality_item_7 = self.player.slider7 - Constants.mid_point_item_7
         self.player.dist_equality_item_8 = self.player.slider8 - Constants.mid_point_item_8
         self.player.dist_equality_item_9 = self.player.slider9 - Constants.mid_point_item_9
@@ -57,7 +57,7 @@ class SliderSecondaryContinuous(Page):
         self.player.dist_equality_item_15 = self.player.slider15 - Constants.mid_point_item_15
         
 
-        #distance on the slider betwen the chosen value and the joint max point - joint max is always maximised in item8, item11 and item13. Therefore, the distance is always 0
+        #distance on the slider between the chosen value and the joint max point - joint max is always maximised in item8, item11 and item13. Therefore, the distance is always 0
         self.player.dist_joint_max_item_7 = self.player.slider7 - Constants.joint_max_item_7
         
         self.player.dist_joint_max_item_9 = self.player.slider9 - Constants.joint_max_item_9
